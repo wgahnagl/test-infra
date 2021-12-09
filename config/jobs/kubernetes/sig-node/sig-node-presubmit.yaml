@@ -484,7 +484,7 @@ presubmits:
         - --node-test-args=LocalStorageCapacityIsolation=true --kubelet-flags="--cgroups-per-qos=true --cgroup-root=/"
         - --node-tests=true
         - --provider=gce
-        - --test_args=--nodes=1 --focus="\[Serial\]" --skip="\[Flaky\]|\[Benchmark\]|\[NodeSpecialFeature:.+\]|\[NodeSpecialFeature\]|\[NodeAlphaFeature:.+\]|\[NodeAlphaFeature\]|\[NodeFeature:Eviction\]|\[NodeFeature:DynamicKubeletConfig\]|\[Feature:Docker\]"
+        - --test_args=--nodes=1 --focus="\[Serial\]" --skip="\[Flaky\]|\[Benchmark\]|\[NodeSpecialFeature:.+\]|\[NodeSpecialFeature\]|\[NodeAlphaFeature:.+\]|\[NodeAlphaFeature\]|\[NodeFeature:Eviction\]|\[NodeFeature:DynamicKubeletConfig\]|\[Feature:Docker\]|\[NodeFeature:DevicePluginProbe\]"
         - --timeout=240m
         env:
         - name: GOPATH
